@@ -1,13 +1,12 @@
 #include<iostream>
 using namespace std;
-int fibonacci(int n){
-   if(n == 0) return 0;
-   if(n == 1) return 1;
-   return fibonacci(n-1) + fibonacci(n-2);
+int gcd(int a, int b){
+   if( b == 0) return a;
+   return gcd(b, a%b);
 }
 int main(){
-    int n;
-    cin >> n;
-    cout << fibonacci(n);
+    int n, m;
+    cin >> n >> m;
+    cout << gcd(n, m);
     return 0;
 }
