@@ -20,7 +20,6 @@ void rec(int index){
 }
 
 int main(){
-    freopen("out.txt", "w", stdout);
     cin >> n;
     rec(0);
     return 0;
