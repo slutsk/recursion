@@ -22,7 +22,7 @@ void brackets_generator(int index){
         if(is_true(brackets)) print_brackets();
         return;
     }
-    //Убрали for
+    //
         brackets[index] = '(';
         brackets_generator(index+1);
         brackets[index] = ')';
