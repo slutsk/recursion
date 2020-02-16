@@ -14,7 +14,7 @@ bool is_true(string str){
 }
 
 void print_brackets(){
-    for(int i = 0; i < 2*n; i++) cout << brackets[i] << " ";
+    for(int i = 0; i < 2*n; i++) cout << brackets[i];
     cout << endl;
 }
 void brackets_generator(int index){
